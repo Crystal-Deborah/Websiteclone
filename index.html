@@ -5,464 +5,465 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.display = "block";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.display = "none";
+      }
+    </script>
 </head>
 
-<style>
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0px;
-}
-
-
-/* Header*/
-    .Header {
-  background: blueviolet;
-  color: white;
-  width: 100%;
-  position: relative;
-  height: 30px;
-  padding: 9px;
-  justify-content: center;
-  border-top: 5px solid blueviolet;
-}
-
-
-/*close button for the header*/
-.close {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  right: 0%;
-  padding: 12px 16px;
-  transform: translate(0%, -50%);
-}
-
-.close:hover {background: #bbb;}
-
-/*logo*/
-.logo {
-    float:left;
-    width: 80px;
-    height: 30px;
-    margin:8px 18px;}
-
-/*Responsive Website*/
-    .hamburger {
-
-display: none;
-
-font-size: 14px;
-
-user-select: none;
-
-}
-.topnav{
-    float: left;
-    width:100px;
-    height:48px;
-    border-left: 1px solid rgba(191,191,191,0.45);
-}
-.Dropdown-menu {
-  font-family: sans-serif;
-  margin: 0px;
-  padding: 10px;
-  border: none;
-}
-
-.dropdown {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-  width: 100px;
-  background-color: white;
-  color: rgb(4, 4, 4);
-}
-
-.dropdown li {
-  position: relative;
-}
-
-.dropdown li a {
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-}
-
-.dropdown li ul {
-  position: absolute;
-  top: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: none;
-  line-height: normal;
-  background-color: white;
-}
-
-.dropdown li ul li a {
-  text-align: left;
-  color: black;
-  font-size: 14px;
-  padding: 10px;
-  display: block;
-  white-space: nowrap;
-}
-/* background color of the dropdown*/
-.dropdown li ul li a:hover {
-  background-color: white;
-  color: white
-}
-
-.dropdown li ul li ul {
-  left: 100%;
-  top: 0;
-}
-
-/*This helps change the color on hovering*/
-
-ul li:hover>a {
-  background-color: white;
-  color: blueviolet !important;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-ul li:hover>ul {
-  display: block;
-}
-
-/*search bar*/
-form.nosubmit {
-  border: none;
-  padding: 0;
-}
-
-input.nosubmit {
-  width: 400px;
-  height: 25px;
-  border: 1px solid #555;
-  border-radius: 25px;
-  display: block;
-  padding: 9px 4px 9px 40px;
-  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
-}
-
-</style>
-</head>
 <body>
 
-<div class="Nav">
+  <!-- ===============================================    HEADER SECTION ===================================-->
+  <header class="header_section">
 
-  <div class="Header">
-<h6>Future-ready skills on your schedule| Learn why Udemy is trusted by 12.5K+ companies around the world</h6>
-<span class="close">&times;</span>
-  </div>  
+    <span style="font-size:30px;cursor:pointer" class="openbtn" onclick="openNav()">&#9776;</span>
+    <!-- LOGO -->
+    <img class="logo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy" width="91" height="34">
 
-<div class="container">
 
-  <div class="topnav" id="mytopnav">
 
-    <div class="logo">
-        <img src="images/udy logo.jpg" alt="u_demy" title="U-demy logo" width="100">
+    <div class"Dropdown-menu" id="myNav">
+      <ul class="dropdown">
+        <li><a href="#">Category</a>
+          <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</span>
+          <ul>
+            <li><a href="#">Development</a>
+              <ul>
+                <li><a href="#">Web Development</a>
+                  <ul>
+                    <li><a href="">Popular topics</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">React JS</a></li>
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">Angular</a></li>
+                    <li><a href="">Node Js</a></li>
+                    <li><a href="">Typescript</a></li>
+                    <li><a href="">HTML5</a></li>
+                    <li><a href="">PHP</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Data Science</a>
+                  <ul>
+                    <li><a href="">Popular topics</a></li>
+                    <li><a href="">Python</a></li>
+                    <li><a href="">Machine Learning</a></li>
+                    <li><a href="">Data Analysis</a></li>
+                    <li><a href="">Deep Learning</a></li>
+                    <li><a href="">Artificial Intelligence</a></li>
+                    <li><a href="">R(Programming languages)</a></li>
+                    <li><a href="">Statistics</a></li>
+                    <li><a href="">Natural Language Processing</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Mobile Development</a>
+                  <ul>
+                    <li><a href="">Popular topics</a></li>
+                    <li><a href="">Google Flutter</a></li>
+                    <li><a href="">Android Development</a></li>
+                    <li><a href="">iOS Development</a></li>
+                    <li><a href="">React Native</a></li>
+                    <li><a href="">Swift</a></li>
+                    <li><a href="">Dart (Programming languages)</a></li>
+                    <li><a href="">Kotlin</a></li>
+                    <li><a href="">SwiftUI</a></li>
+                    <li><a href="">Mobile App Development</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Programming Languages</a>
+                  <ul>
+                    <li><a href="">Popular topics</a></li>
+                    <li><a href="">Python</a></li>
+                    <li><a href="">Java</a></li>
+                    <li><a href="">C#</a></li>
+                    <li><a href="">ReactJS</a></li>
+                    <li><a href="">C++</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">C (Programming language)</a></li>
+                    <li><a href="">Spring Framework</a></li>
+                    <li><a href="">Object Oriented Programming</a></li>
+                  </ul>
+                </li>
+
+                <li><a href="#">Game Development</a>
+                  <ul>
+                    <li><a href="">Popular topics</a></li>
+                    <li><a href="">Unity</a></li>
+                    <li><a href="">Unreal Engine</a></li>
+                    <li><a href="">Game Development Fundamental</a></li>
+                    <li><a href="">C#</a></li>
+                    <li><a href="">3D Game Development</a></li>
+                    <li><a href="">C++</a></li>
+                    <li><a href="">2D Game Development</a></li>
+                    <li><a href="">Unreal Engine Blueprint</a></li>
+                    <li><a href="">Blender</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Database Design & Development</a>
+                  <ul>
+                    <li><a href="">Popular topics</a></li>
+                    <li><a href="">SQL</a></li>
+                    <li><a href="">MySQL</a></li>
+                    <li><a href="">Oracle SQL</a></li>
+                    <li><a href="">Database Management</a></li>
+                    <li><a href="">MongoDB</a></li>
+                    <li><a href="">Apache Kafka</a></li>
+                    <li><a href="">SQL Server</a></li>
+                    <li><a href="">PostgreSQL</a></li>
+                    <li><a href="">Database Programming</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Software Testing</a>
+                  <ul>
+                    <li><a href="">Popular topics</a></li>
+                    <li><a href="">Selenium WebDriver</a></li>
+                    <li><a href="">Java</a></li>
+                    <li><a href="">Automation Testing</a></li>
+                    <li><a href="">Postman</a></li>
+                    <li><a href="">API Testing</a></li>
+                    <li><a href="">Cypress.io</a></li>
+                    <li><a href="">Selenium Testing Framework</a></li>
+                    <li><a href="">Quality Assurance</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Software Engineering</a>
+                  <ul>
+                    <li><a href="">Popular topics</a></li>
+                    <li><a href="">Data Structurer</a></li>
+                    <li><a href="">Algorithms</a></li>
+                    <li><a href="">Coding Interview</a></li>
+                    <li><a href="">Certified Kubernetes Application Development (CKAD)</a></li>
+                    <li><a href="">Microservices</a></li>
+                    <li><a href="">Software Architecture</a></li>
+                    <li><a href="">Software Practices</a></li>
+                    <li><a href="">Apache Airflow</a></li>
+                    <li><a href="">Elasticsearch</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Software DEvelopment tools</a>
+                  <ul>
+                    <li><a href="">Popular topics</a></li>
+                    <li><a href="">Git</a></li>
+                    <li><a href="">Docker</a></li>
+                    <li><a href="">Kubernetes</a></li>
+                    <li><a href="">Github</a></li>
+                    <li><a href="">JIRA</a></li>
+                    <li><a href="">Confluence</a></li>
+                    <li><a href="">DevOps</a></li>
+                    <li><a href="">Jenkins</a></li>
+                    <li><a href="">CI/CD</a></li>
+                  </ul>
+                </li>
+                <li><a href="">No-code Development</a>
+                  <ul>
+                    <li><a href="#">Popular topics</a></li>
+                    <li><a href="">Pega</a></li>
+                    <li><a href="">WordPress</a></li>
+                    <li><a href="">Bubble Visual Programming</a></li>
+                    <li><a href="">Microsoft Power Platform</a></li>
+                    <li><a href="">Elementor</a></li>
+                    <li><a href="">Wix</a></li>
+                    <li><a href="">Web Design</a></li>
+                    <li><a href="">Web Develoment</a></li>
+                    <li><a href="">Airtable</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">Business</a>
+              <ul>
+                <li><a href="#">Entrepreneurship</a>
+                  <ul>
+                    <li><a href="">Popular topics</a></li>
+                    <li><a href="">Business Fundamentals</a></li>
+                    <li><a href="">Entrepreneurship Fundamentals</a></li>
+                    <li><a href="">Freelancing</a></li>
+                    <li><a href="">Business Strategy</a></li>
+                    <li><a href="">Online Business</a></li>
+                    <li><a href="">Startup</a></li>
+                    <li><a href="">Business Plan</a></li>
+                    <li><a href="">Blogging</a></li>
+                    <li><a href="">Home Business</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Communication</a>
+                  <ul>
+                    <li><a href="">Popular topics</a></li>
+                    <li><a href="">Communication Skills</a></li>
+                    <li><a href="">Presentation Skills</a></li>
+                    <li><a href="">Public Speaking</a></li>
+                    <li><a href="">Writing</a></li>
+                    <li><a href="">Friction Writing</a></li>
+                    <li><a href="">Email Writing and Etiquettes</a></li>
+                    <li><a href="">Business Writing</a></li>
+                    <li><a href="">Storytelling</a></li>
+                    <li><a href="">Novel Writing</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Management</a>
+                  <ul>
+                    <li><a href="">Popular topics</a></li>
+                    <li><a href="">Product Management</a></li>
+                    <li><a href="">Leadership</a></li>
+                    <li><a href="">Management Skills</a></li>
+                    <li><a href="">Business Strategy</a></li>
+                    <li><a href="">ISO 9001</a></li>
+                    <li><a href="">Manager Training</a></li>
+                    <li><a href="">Project Management</a></li>
+                    <li><a href="">Quality Management</a></li>
+                    <li><a href="">PMP</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Sales</a>
+                  <ul>
+                    <li><a href="">Popular topics</a></li>
+                    <li><a href="">Sales Skills</a></li>
+                    <li><a href="">B2B Sales</a></li>
+                    <li><a href="">LinkedIn</a></li>
+                    <li><a href="">Lead Generation</a></li>
+                    <li><a href="">Customer Service</a></li>
+                    <li><a href="">Presentation Skills</a></li>
+                    <li><a href="">Cold Email</a></li>
+                    <li><a href="">Customer Success Management</a></li>
+                    <li><a href="">Persuasion</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Business Strategy</a></li>
+                <li><a href="">Operations</a></li>
+                <li><a href="">Project Management</a></li>
+                <li><a href="">Business Law</a></li>
+                <li><a href="">Business Analytics & Intelligence</a></li>
+                <li><a href="">Human Resources</a></li>
+                <li><a href="">Industry</a></li>
+                <li><a href="">E-Commerce</a></li>
+                <li><a href="">Media</a></li>
+                <li><a href="">Real Estate</a></li>
+                <li><a href="">Other Business</a></li>
+              </ul>
+            </li>
+
+            <li><a href="">Finance & Accounting</a></li>
+            <li><a href="">IT & Software</a></li>
+            <li><a href="">Office Productivity</a></li>
+            <li><a href="">Personal Development</a></li>
+            <li><a href="">Design</a></li>
+            <li><a href="">Marketing</a></li>
+            <li><a href="">Lifestyle</a></li>
+            <li><a href="">Photography & Video</a></li>
+            <li><a href="">Health & Fitness</a></li>
+            <li><a href="">Music</a></li>
+            <li><a href="">Teaching & Academics</a>
+              <ul>
+                <li><a href="">Engineering</a></li>
+                <li><a href="">Humanities</a></li>
+                <li><a href="">Science</a></li>
+                <li><a href="#">Math</a>
+                  <ul>
+                    <li><a href="">Popular topics</a></li>
+                    <li><a href="">Calculus</a></li>
+                    <li><a href="">Statistics</a></li>
+                    <li><a href="">Linear Algebra</a></li>
+                    <li><a href="">Algebra</a></li>
+                    <li><a href="">Probability</a></li>
+                    <li><a href="">Trigonometry</a></li>
+                    <li><a href="">Discrete Math</a></li>
+                    <li><a href="">Differential Equations</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Online Education</a>
+                  <ul>
+                    <li><a href="">Popular topics</a></li>
+                    <li><a href="">Online Course Creation</a></li>
+                    <li><a href="">Canva</a></li>
+                    <li><a href="">Teaching Online</a></li>
+                    <li><a href="">Online Business</a></li>
+                    <li><a href="">Online Course Marketing</a></li>
+                    <li><a href="">Coding for Kids</a></li>
+                    <li><a href="">Adobe Captivate</a></li>
+                    <li><a href="">Articularte Storyline</a>
+                    <li><a href="">Passive Income</a></li></li>
+                  </ul>
+                </li>
+                <li><a href="">Social Science</a></li>
+                <li><a href="">Language Learning</a></li>
+                <li><a href="">Teacher Training</a></li>
+                <li><a href="">Test Prep</a></li>
+                <li><a href="">Other Teaching & Academics</a></li>
+              </ul>
+            </li>
+            <li><a href="">Others</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
 
-    <div class"Dropdown-menu">
-        <ul class="dropdown">
-            <li><a href="#">Category</a>
-                <ul>
-                    <li><a href="#">Development</a>
-                    <ul>
-                    <li><a href="#">Web Development</a>
-                     <ul>
-                                    <li><a href="">Popular topics</a></li>
-                                    <li><a href="">JavaScript</a></li>
-                                    <li><a href="">React JS</a></li>
-                                    <li><a href="">CSS</a></li>
-                                    <li><a href="">Angular</a></li>
-                                    <li><a href="">Node Js</a></li>
-                                    <li><a href="">Typescript</a></li>
-                                    <li><a href="">HTML5</a></li>
-                                    <li><a href="">PHP</a></li>
-                                     </ul>
-                    </li>
-                     <li><a href="#">Data Science</a>
-                     <ul>
-                     <li><a href="">Popular topics</a></li>
-                        <li><a href="">Python</a></li>
-                        <li><a href="">Machine Learning</a></li>
-                        <li><a href="">Data Analysis</a></li>
-                        <li><a href="">Deep Learning</a></li>
-                        <li><a href="">Artificial Intelligence</a></li>
-                        <li><a href="">R(Programming languages)</a></li>
-                        <li><a href="">Statistics</a></li>
-                        <li><a href="">Natural Language Processing</a></li>
-                      </ul>
-                     </li>
-                      <li><a href="#">Mobile Development</a>
-                       <ul>
-                       <li><a href="">Popular topics</a></li>
-                         <li><a href="">Google Flutter</a></li>
-                         <li><a href="">Android Development</a></li>
-                         <li><a href="">iOS Development</a></li>
-                         <li><a href="">React Native</a></li>
-                         <li><a href="">Swift</a></li>
-                         <li><a href="">Dart (Programming languages)</a></li>
-                         <li><a href="">Kotlin</a></li>
-                         <li><a href="">SwiftUI</a></li>
-                         <li><a href="">Mobile App Development</a></li>
-                          </ul>
-                      </li>
-                       <li><a href="#">Programming Languages</a>
-                       <ul>
-                       <li><a href="">Popular topics</a></li>
-                         <li><a href="">Python</a></li>
-                         <li><a href="">Java</a></li>
-                         <li><a href="">C#</a></li>
-                         <li><a href="">ReactJS</a></li>
-                         <li><a href="">C++</a></li>
-                         <li><a href="">JavaScript</a></li>
-                         <li><a href="">C (Programming language)</a></li>
-                         <li><a href="">Spring Framework</a></li>
-                         <li><a href="">Object Oriented Programming</a></li>
-                        </ul>
-                       </li>
-                       
-                        <li><a href="#">Game Development</a>
-                        <ul>
-                        <li><a href="">Popular topics</a></li>
-                         <li><a href="">Unity</a></li>
-                         <li><a href="">Unreal Engine</a></li>
-                         <li><a href="">Game Development Fundamental</a></li>
-                         <li><a href="">C#</a></li>
-                         <li><a href="">3D Game Development</a></li>
-                         <li><a href="">C++</a></li>
-                         <li><a href="">2D Game Development</a></li>
-                         <li><a href="">Unreal Engine Blueprint</a></li>
-                         <li><a href="">Blender</a></li>
-                        </ul>
-                        </li>
-                         <li><a href="">Database Design & Development</a>
-                         <ul>
-                         <li><a href="">Popular topics</a></li>
-                         <li><a href="">SQL</a></li>
-                         <li><a href="">MySQL</a></li>
-                         <li><a href="">Oracle SQL</a></li>
-                         <li><a href="">Database Management</a></li>
-                         <li><a href="">MongoDB</a></li>
-                         <li><a href="">Apache Kafka</a></li>
-                         <li><a href="">SQL Server</a></li>
-                         <li><a href="">PostgreSQL</a></li>
-                         <li><a href="">Database Programming</a></li>
-                         </ul>
-                         </li>
-                          <li><a href="#">Software Testing</a>
-                           <ul>
-                            <li><a href="">Popular topics</a></li>
-                         <li><a href="">Selenium WebDriver</a></li>
-                         <li><a href="">Java</a></li>
-                         <li><a href="">Automation Testing</a></li>
-                         <li><a href="">Postman</a></li>
-                         <li><a href="">API Testing</a></li>
-                         <li><a href="">Cypress.io</a></li>
-                         <li><a href="">Selenium Testing Framework</a></li>
-                         <li><a href="">Quality Assurance</a></li>
-                           </ul>
-                          </li>
-                           <li><a href="#">Software Engineering</a>
-                           <ul>
-                           <li><a href="">Popular topics</a></li>
-                         <li><a href="">Data Structurer</a></li>
-                         <li><a href="">Algorithms</a></li>
-                         <li><a href="">Coding Interview</a></li>
-                         <li><a href="">Certified Kubernetes Application Development (CKAD)</a></li>
-                         <li><a href="">Microservices</a></li>
-                         <li><a href="">Software Architecture</a></li>
-                         <li><a href="">Software Practices</a></li>
-                         <li><a href="">Apache Airflow</a></li>
-                         <li><a href="">Elasticsearch</a></li>
-                           </ul>
-                           </li>
-                           <li><a href="#">Software DEvelopment tools</a>
-                           <ul>
-                           <li><a href="">Popular topics</a></li>
-                         <li><a href="">Git</a></li>
-                         <li><a href="">Docker</a></li>
-                         <li><a href="">Kubernetes</a></li>
-                         <li><a href="">Github</a></li>
-                         <li><a href="">JIRA</a></li>
-                         <li><a href="">Confluence</a></li>
-                         <li><a href="">DevOps</a></li>
-                         <li><a href="">Jenkins</a></li>
-                         <li><a href="">CI/CD</a></li>
-                           </ul>
-                           </li>
-                            <li><a href="">No-code Development</a>
-                            <ul>
-                              <li><a href="#">Popular topics</a></li>
-                         <li><a href="">Pega</a></li>
-                         <li><a href="">WordPress</a></li>
-                         <li><a href="">Bubble Visual Programming</a></li>
-                         <li><a href="">Microsoft Power Platform</a></li>
-                         <li><a href="">Elementor</a></li>
-                         <li><a href="">Wix</a></li>
-                         <li><a href="">Web Design</a></li>
-                         <li><a href="">Web Develoment</a></li>
-                         <li><a href="">Airtable</a></li>
-                            </ul>
-                            </li>
-                     </ul>
-                    </li>
-                    <li><a href="#">Business</a>
-                    <ul>
-                    <li><a href="#">Entrepreneurship</a>
-                    <ul>
-                    <li><a href="">Popular topics</a></li> 
-                        <li><a href="">Business Fundamentals</a></li> 
-                        <li><a href="">Entrepreneurship Fundamentals</a></li>
-                        <li><a href="">Freelancing</a></li>
-                        <li><a href="">Business Strategy</a></li>
-                        <li><a href="">Online Business</a></li>
-                        <li><a href="">Startup</a></li>
-                        <li><a href="">Business Plan</a></li>
-                        <li><a href="">Blogging</a></li>
-                        <li><a href="">Home Business</a></li>
-                    </ul>
-                    </li>
-                    <li><a href="#">Communication</a>
-                     <ul>
-                     <li><a href="">Popular topics</a></li> 
-                        <li><a href="">Communication Skills</a></li> 
-                        <li><a href="">Presentation Skills</a></li>
-                        <li><a href="">Public Speaking</a></li>
-                        <li><a href="">Writing</a></li>
-                        <li><a href="">Friction Writing</a></li>
-                        <li><a href="">Email Writing and Etiquettes</a></li>
-                        <li><a href="">Business Writing</a></li>
-                        <li><a href="">Storytelling</a></li>
-                        <li><a href="">Novel Writing</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Management</a>
-                    <ul>
-                      <li><a href="">Popular topics</a></li> 
-                        <li><a href="">Product Management</a></li> 
-                        <li><a href="">Leadership</a></li>
-                        <li><a href="">Management Skills</a></li>
-                        <li><a href="">Business Strategy</a></li>
-                        <li><a href="">ISO 9001</a></li>
-                        <li><a href="">Manager Training</a></li>
-                        <li><a href="">Project Management</a></li>
-                        <li><a href="">Quality Management</a></li>
-                        <li><a href="">PMP</a></li>
-                    </ul>
-                    </li>
-                    <li><a href="#">Sales</a>
-                    <ul>
-                    <li><a href="">Popular topics</a></li> 
-                        <li><a href="">Sales Skills</a></li> 
-                        <li><a href="">B2B Sales</a></li>
-                        <li><a href="">LinkedIn</a></li>
-                        <li><a href="">Lead Generation</a></li>
-                        <li><a href="">Customer Service</a></li>
-                        <li><a href="">Presentation Skills</a></li>
-                        <li><a href="">Cold Email</a></li>
-                        <li><a href="">Customer Success Management</a></li>
-                        <li><a href="">Persuasion</a></li>
-                    </ul>
-                    </li>
-                    
-                    <li><a href="">Business Strategy</a></li>
-                    <li><a href="">Operations</a></li>
-                    <li><a href="">Project Management</a></li>
-                    <li><a href="">Business Law</a></li>
-                    <li><a href="">Business Analytics & Intelligence</a>
-                    </li>
-                    <li><a href="">Human Resources</a></li>
-                    <li><a href="">Industry</a></li>
-                    <li><a href="">E-Commerce</a></li>
-                    <li><a href="">Media</a></li>
-                    <li><a href="">Real Estate</a></li>
-                    <li><a href="">Other Business</a></li>
-                    </ul>
-                    </li>
-                    
-                    <li><a href="">Finance & Accounting</a></li>
-                    <li><a href="">IT & Software</a></li>
-                    <li><a href="">Office Productivity</a></li>
-                    <li><a href="">Personal Development</a></li>
-                    <li><a href="">Design</a></li>
-                    <li><a href="">Marketing</a></li>
-                    <li><a href="">Lifestyle</a></li>
-                    <li><a href="">Photography & Video</a></li>
-                    <li><a href="">Health & Fitness</a></li>
-                    <li><a href="">Music</a></li>
-                    <li><a href="">Teaching & Academics</a>
-                   
-                        <ul>
-                            <li><a href="">Engineering</a></li>
-                            <li><a href="">Humanities</a></li>
-                            <li><a href="">Science</a></li>
-                            <li><a href="#">Math</a>
-                                <ul>
-                                    <li><a href="">Popular topics</a></li>
-                                    <li><a href="">Calculus</a></li>
-                                    <li><a href="">Statistics</a></li>
-                                    <li><a href="">Linear Algebra</a></li>
-                                    <li><a href="">Algebra</a></li>
-                                    <li><a href="">Probability</a></li>
-                                    <li><a href="">Trigonometry</a></li>
-                                    <li><a href="">Discrete Math</a></li>
-                                    <li><a href="">Differential Equations</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Online Education</a>
-                            <ul>
-                                 <li><a href="">Popular topics</a></li>
-                                <li><a href="">Online Course Creation</a></li>
-                                <li><a href="">Canva</a></li>
-                                <li><a href="">Teaching Online</a></li>
-                                <li><a href="">Online Business</a></li>
-                                <li><a href="">Online Course Marketing</a></li>
-                                <li><a href="">Coding for Kids</a></li>
-                                <li><a href="">Adobe Captivate</a></li>
-                                <li><a href="">Articularte Storyline</a>
-                                <li><a href="">Passive Income</a></li></li>
-                            </ul>
-                            </li>
-                            <li><a href="">Social Science</a></li>
-                            <li><a href="">Language Learning</a></li>
-                            <li><a href="">Teacher Training</a></li>
-                            <li><a href="">Test Prep</a></li>
-                            <li><a href="">Other Teaching & Academics</a></li>
-                                                    
-    
-                        </ul>
-                    </li>
-                    <li><a href="">Others</a></li>
-                </ul>
-            </li>
-        </ul>
+    <!--SEARCH BUTTON-->
+    <div>
+      <form class="nosubmit">
+        <input class="nosubmit" type="text" placeholder="Search anything">
+      </form>
+    </div>
+
+    <!--U-demy Business-->
+    <div>
+      <ul class="dropdown_1">
+        <li><a href="#">Udemy Business</a>
+          <ul>
+            <li> <a href="#" <b>Get your team access to over 19,000 top Udemy courses, </br> anytime, anywhere.</b> <br class="teacher"> Try Udemy Business</b></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!--Teach on U-demy-->
+    <div>
+      <ul class="dropdown_1">
+        <li><a class="no_border" href="#">Teach on Udemy</a>
+          <ul>
+            <li> <a href="#" <b>Turn what you know into an opportunity and </br> reach millions around the world.</b> <br class="teacher"> Learn more</b></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- ADD TO CART -->
+    <div>
+      <a href="#">Cart</a>
+    </div>
+
+    <!-- LOG IN BUTTON -->
+    <div>
+      <button>Log in</button>
+    </div>
+
+    <!-- SIGN UP BUTTON -->
+    <div>
+      <button class="sign_up">Sign up</button>
+    </div>
+
+    <!-- WORLD BUTTON -->
+
+    <button class="world_btn">IC</button>
+
+  </header>
+
+  <!-- <div class="Nav">
+
+    <!-- <div class="Header">
+      <h6>Future-ready skills on your schedule| Learn why Udemy is trusted by 12.5K+ companies around the world</h6>
+      <span class="close">&times;</span>
+    </div>
+
+    <div class="container">
+
+      <div class="topnav" id="mytopnav">
+<!--
+        <div class="logo">
+            <img src="images/udy logo.jpg" alt="u_demy" title="U-demy logo" width="100">
         </div>
 
-<!--search button-->
-<form class="nosubmit">
-    <input class="nosubmit" type="search" placeholder="Search anything">
-  </form>
 
+  </div> -->
 
-   <!--U-demy Business-->
-   <ul class="dropdown">
-    <li><a href="#">U-demy Business</a>
-        <ul>
-<li> <a href="#" <b>Get your team access to over 19,000 top Udemy courses, anytime, anywhere.</b> <br class="teacher"> Try Udemy Business</b></li>
-        </ul>
-    </li>
-   </ul>
+  <main class="pre_main">
+    <article id="text_box">
+      <h1>New to Udemy? Lucky you.</h1>
+      <p>Courses start at #3,500. Get your new-student offer before it expires</p>
+    </article>
+    <img id="img_2" height="400" alt="" src="https://img-c.udemycdn.com/notices/web_banner/image_udlite/4f9d4123-43ee-4f2a-b5ef-1f2ac22962f3.jpg">
+  </main>
+
+  
+  <!-- =========================================    SECTION 3   ========================== -->
+  <div class="section2">
+    <h1>A broad selection of courses</h1>
+    <p>Choose from 213,000 online video courses with new additions published every month</p>
+
+    <div>
+      <ul class="">
+        <li>
+          <a href="">Python</a>
+          <a href="">Excel</a>
+          <a href="">Web Development</a>
+          <a href="">JavaScript</a>
+          <a href="">Data Science</a>
+          <a href="">AWS Certificate</a>
+          <a href="">Drawing</a>
+        </li>
+      </ul>
+      <article>
+        <h2>Expand your career opportunities with python</h2>
+        <p class="sub_text">Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language.
+          Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning.
+           You’ll learn how to build everything from games to sites to apps.
+           Choose from a range of courses that will appeal to both beginners and advanced developers alike.
+        </p>
+        <div>
+          <button class="python_btn">Explore Python</button>
+        </div>
+
+      </article>
+    </div>
+
   </div>
-</div>
-</div>
+
+  <!-- ========================================   FOOTER   =========================================== -->
+  <footer>
+    <div class="footer_section">
+      <div class="footer_text">
+      <section>
+        <ul>
+          <li><a href="">Udemy Business</a></li>
+          <li><a href="">Teach on Udemy</a></li>
+          <li><a href="">Get the app</a></li>
+          <li><a href="">About us</a></li>
+          <li><a href="">Contacts us</a></li>
+        </ul>
+      </section>
+      <section>
+        <ul>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Help and support</a></li>
+          <li><a href="">Affiliate</a></li>
+          <li><a href="">Investors</a></li>
+        </ul>
+      </section>
+      <section>
+        <ul>
+          <li><a href="">Terms</a></li>
+          <li><a href="">Privacy policy</a></li>
+          <li><a href="">Cookie settings</a></li>
+          <li><a href="">Sitemap</a></li>
+          <li><a href="">Accessibility statement</a></li>
+        </ul>
+      </section>
+    </div>
+      <div>
+        <button class="eng_btn">English</button>
+      </div>
+    </div>
+
+    <div class="footer_end">
+      <div>
+        <img src="/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="Udemy" width="91.07142857142857" height="34">
+      </div>
+      <div>
+        <code>@ 2022 Udemy, Inc.</code>
+      </div>
+
+    </div>
+
+
+
+
+  </footer>
 </body>
 </html>
